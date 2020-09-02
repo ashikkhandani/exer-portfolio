@@ -77,3 +77,30 @@ main div.home-content a:hover {
   background-color: white;
   border: 1px solid #0bc9eb;
 }
+
+/* About me page main part*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container .box {
+  position: relative;
+  width: 350px;
+
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(170, 164, 164);
+  justify-content: space-between;
+}
+.container mark {
+  background-color: #c3e5eb;
+}
+.container .box .icon {
+  color: #64c5d6;
+  font-size: 50px;
+}
