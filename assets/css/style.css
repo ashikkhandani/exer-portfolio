@@ -13,7 +13,9 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
 }
-
+/* @media screen and (min-width: 380px) and (max-width: 1025px) {
+  background-color: lightgray;
+} */
 /*Navigation*/
 nav {
   background-color: #f5f5f5;
@@ -36,8 +38,7 @@ nav a:hover {
   color: #898989;
 }
 
-/*Home Page main part
-*/
+/* Home Page main part */
 
 main {
   margin: 10px;
@@ -79,28 +80,86 @@ main div.home-content a:hover {
 }
 
 /* About me page main part*/
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+main div.about-content div {
+  width: 25%;
+  display: inline-block;
+  padding: 20px;
+  margin: 30px;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  color: #504e4e;
+  text-align: justify;
+}
+main div.about-content div p {
+  padding-top: 20px;
+}
+main div.about-content div p mark {
+  background-color: #d7ecf4;
+}
+main div.about-content div i.fas,
+main div.about-content div i.far {
+  font-size: 4rem;
+  display: block;
+  text-align: center;
+  color: #6adaf4;
+}
+main div.about-content div:hover i.fas,
+main div.about-content div:hover i.far {
+  color: #2798ee;
+}
+main div.about-content div:hover p mark {
+  background-color: #83e4ee;
+}
+main div.about-content div:hover {
+  font-weight: bold;
 }
 
-.container .box {
-  position: relative;
-  width: 350px;
+/* Service page main part */
+main div div.services-box {
+  margin: 0 200px;
+  text-align: left;
+}
+main div.services-box img {
+  height: 150px;
+}
+main div.services-box p {
+  padding: 0 20px 20px;
+  text-align: justify;
+}
+main div.services-box p span {
+  color: orange;
+  font-weight: bold;
+}
+main div div.services-box:nth-of-type(2) {
+  text-align: right;
+}
+/* Portfolio page main part */
+main div div.portfolio-box {
+  margin: 0 200px;
+  text-align: left;
+}
+main div .portfolio-box img {
+  height: 150px;
+}
+main div .portfolio-box p {
+  padding: 0 20px 20px;
+  text-align: justify;
+}
+main div div.portfolio-box:nth-of-type(2) {
+  text-align: right;
+}
 
-  padding: 10px;
-  box-sizing: border-box;
-  margin: 10px;
-  border-radius: 10px;
-  border: 1px solid rgb(170, 164, 164);
-  justify-content: space-between;
+/* Contact page main part */
+main .contact-content address {
+  font-size: 1.6rem;
 }
-.container mark {
-  background-color: #c3e5eb;
+main .contact-content p i {
+  color: #47afff;
 }
-.container .box .icon {
-  color: #64c5d6;
-  font-size: 50px;
+main .contact-content p i.fas,
+main .contact-content p i.fab {
+  color: #0c40ed;
+  font-size: 2rem;
+  padding: 0 5px;
+  text-shadow: 3px 3px 5px #797575;
 }
